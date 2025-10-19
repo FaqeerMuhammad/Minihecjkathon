@@ -1,0 +1,52 @@
+/* src/components/pages/Signup.module.css */
+
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #ffffff;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.btnPrimary {
+  width: 100%;
+  background-color: #007bff;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #0056b3;
+}
+
+.linkText {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.linkText a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.linkText a:hover {
+  text-decoration: underline;
+}

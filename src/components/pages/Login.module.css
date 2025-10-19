@@ -1,0 +1,52 @@
+/* src/components/pages/Login.module.css */
+
+.container {
+  max-width: 400px;
+  margin: 80px auto;
+  background: #fdfdfd;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.12);
+}
+
+.title {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.btnPrimary {
+  width: 100%;
+  background-color: #28a745;
+  border: none;
+  font-weight: 600;
+  padding: 10px;
+  transition: 0.3s ease;
+}
+
+.btnPrimary:hover {
+  background-color: #1e7e34;
+}
+
+.linkText {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.linkText a {
+  color: #28a745;
+  text-decoration: none;
+}
+
+.linkText a:hover {
+  text-decoration: underline;
+}
