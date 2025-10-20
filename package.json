@@ -15,7 +15,7 @@
     "bun": "^1.2.21",
     "firebase": "^12.2.1",
     "html2canvas": "^1.4.1",
-    "jspdf": "^2.5.1",
+    "jspdf": "^3.0.3",
     "jspdf-autotable": "^5.0.2",
     "react": "^19.1.1",
     "react-bootstrap": "^2.10.10",
