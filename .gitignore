@@ -1,3 +1,17 @@
+
+node_modules/
+.env
+firebase.js (optional if it has secrets)
+dist/
+
+
+
+
+
+
+
+
+
 # Logs
 logs
 *.log

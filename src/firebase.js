@@ -3,15 +3,14 @@ import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
 import { getFunctions, httpsCallable } from "firebase/functions";
 
-
 const firebaseConfig = {
-  apiKey: "AIzaSyCQBA0IYKzhETXxmyRTgEzcFta0gF_yNAY",
-  authDomain: "picthcraft.firebaseapp.com",
-  projectId: "picthcraft",
-  storageBucket: "picthcraft.firebasestorage.app",
-  messagingSenderId: "25227521287",
-  appId: "1:25227521287:web:fb688dafbabbfbea1169a2",
-  measurementId: "G-VKC9VFH4E6"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
@@ -19,7 +18,6 @@ const db = getFirestore(app);
 const auth = getAuth(app);
 const functions = getFunctions(app);
 
-// Create a callable function reference
-export const callGemini = httpsCallable(functions, 'generateContent');
+export const callGemini = httpsCallable(functions, "generateContent");
 
 export { app, db, auth };
