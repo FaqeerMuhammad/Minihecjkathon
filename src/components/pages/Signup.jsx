@@ -35,6 +35,9 @@ const Signup = () => {
 
   return (
     <Form className={styles.container} onSubmit={handleSignup}>
+      
+      <h1 className={styles.title}> <strong>� PitchCraft </strong> </h1>
+      
       <h1 className={styles.title}>Create Account</h1>
 
       <Form.Group className="mb-3" controlId="formBasicEmail">

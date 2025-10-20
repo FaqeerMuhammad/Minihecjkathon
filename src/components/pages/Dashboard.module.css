@@ -10,6 +10,43 @@
   padding: 2rem;
 }
 
+
+.title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+  /* Gradient background for text */
+  background: linear-gradient(270deg, #3b82f6, #9333ea, #14b8a6);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  /* Smooth gradient animation */
+  animation: gradientShift 6s ease infinite;
+}
+
+
+.textarea {
+  width: 100%;
+  min-height: 120px;
+  resize: vertical;
+  padding: 1rem;
+  border: 2px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.textarea:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+
+
 .heading {
   font-size: 3rem;
   font-weight: 700;
@@ -48,6 +85,33 @@
   color: #94a3b8;
 }
 
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+  margin-top: 1rem;
+}
+
+.pdfButton {
+  background: #16a34a;
+}
+
+.pdfButton:hover {
+  background: #15803d;
+}
+
+.pdfButton:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+
+
+
+
+
+
 .button {
   background: linear-gradient(90deg, #38bdf8, #818cf8);
   color: white;
@@ -62,4 +126,42 @@
 .button:hover {
   opacity: 0.9;
   transform: translateY(-2px);
+}
+
+
+
+.output {
+  margin-top: 1.5rem;
+  background: #1f2937;
+  color: #f9fafb;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  white-space: pre-wrap;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid rgba(255, 255, 255, 0.4);
+  border-top-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  animation: spin 0.8s linear infinite;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.textarea:disabled {
+  background-color: #f3f4f6;
+  color: #9ca3af;
+  cursor: not-allowed;
 }
